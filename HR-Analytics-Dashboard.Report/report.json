@@ -1,0 +1,151 @@
+{
+  "config": "{\"version\":\"5.53\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.53\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "filters": "[{\"name\":\"Filter6c1d458fea5000d18dd2\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Final Data\"}},\"Property\":\"Value\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Value\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'WO'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},{\"name\":\"Filtera3d2d6d41c252825d566\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Final Data\"}},\"Property\":\"Date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":4,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Date\"}},\"Right\":{\"DateSpan\":{\"Expression\":{\"Literal\":{\"Value\":\"datetime'2022-06-17T00:00:00'\"}},\"TimeUnit\":5}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2174d32e0e08d1e04c27\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1070,\"y\":108,\"z\":11000,\"width\":194,\"height\":186,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Final Data.Day of Week\"},{\"queryRef\":\"Measure Table.Presence %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Day of Week\"},\"Name\":\"Final Data.Day of Week\",\"NativeReferenceName\":\"Day of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Presence %\"},\"Name\":\"Measure Table.Presence %\",\"NativeReferenceName\":\"Presence %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Presence %\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 186.00,
+          "width": 194.00,
+          "x": 1070.00,
+          "y": 108.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"2a64e72d71bce42099ad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1070,\"y\":496,\"z\":12000,\"width\":194,\"height\":202,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Final Data.Day of Week\"},{\"queryRef\":\"Measure Table.SL %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Day of Week\"},\"Name\":\"Final Data.Day of Week\",\"NativeReferenceName\":\"Day of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"SL %\"},\"Name\":\"Measure Table.SL %\",\"NativeReferenceName\":\"SL %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Day of Week\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"109.44444444444444D\"}}}},\"selector\":{\"metadata\":\"Final Data.Day of Week\"}}]}}}",
+          "filters": "[]",
+          "height": 202.00,
+          "width": 194.00,
+          "x": 1070.00,
+          "y": 496.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"3feb2e325552aa6cddde\",\"layouts\":[{\"id\":0,\"position\":{\"x\":333.75,\"y\":58.75,\"z\":3000,\"width\":166.25,\"height\":125,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.SL %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"SL %\"},\"Name\":\"Measure Table.SL %\",\"NativeReferenceName\":\"SL %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"SL %\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"28D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 125.00,
+          "width": 166.25,
+          "x": 333.75,
+          "y": 58.75,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"4f4df7810573a0709455\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41.42857142857143,\"y\":450.00000000000006,\"z\":6000,\"width\":425.7142857142857,\"height\":247.14285714285717,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Final Data.Name\",\"active\":true}],\"Values\":[{\"queryRef\":\"Min(Final Data.Value)\"}],\"Columns\":[{\"queryRef\":\"Final Data.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Name\"},\"Name\":\"Final Data.Name\",\"NativeReferenceName\":\"Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Value\"}},\"Function\":3},\"Name\":\"Min(Final Data.Value)\",\"NativeReferenceName\":\"First Value\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Date\"},\"Name\":\"Final Data.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Name\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 247.14,
+          "width": 425.71,
+          "x": 41.43,
+          "y": 450.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"53c239c500022e6034bc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":874,\"y\":12,\"z\":1000,\"width\":324,\"height\":72,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Final Data.Month\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Month\"},\"Name\":\"Final Data.Month\",\"NativeReferenceName\":\"Month\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Month\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"shapeCustomRectangle\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"style\":{\"expr\":{\"Literal\":{\"Value\":\"'Cards'\"}}}}}],\"general\":[{\"properties\":{}}],\"label\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 72.00,
+          "width": 324.00,
+          "x": 874.00,
+          "y": 12.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"615f503c3a20b5088a92\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41.42857142857143,\"y\":184.2857142857143,\"z\":4000,\"width\":425.7142857142857,\"height\":251.42857142857144,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Final Data.Name\"},{\"queryRef\":\"Measure Table.Presence %\"},{\"queryRef\":\"Measure Table.WFH %\"},{\"queryRef\":\"Measure Table.SL %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Name\"},\"Name\":\"Final Data.Name\",\"NativeReferenceName\":\"Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Presence %\"},\"Name\":\"Measure Table.Presence %\",\"NativeReferenceName\":\"Presence %\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"WFH %\"},\"Name\":\"Measure Table.WFH %\",\"NativeReferenceName\":\"WFH %\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"SL %\"},\"Name\":\"Measure Table.SL %\",\"NativeReferenceName\":\"SL %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Name\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"82.74999949225673D\"}}}},\"selector\":{\"metadata\":\"Measure Table.SL %\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"85.8041491643724D\"}}}},\"selector\":{\"metadata\":\"Measure Table.Presence %\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"94.75000052764767D\"}}}},\"selector\":{\"metadata\":\"Measure Table.WFH %\"}}]}}}",
+          "filters": "[]",
+          "height": 251.43,
+          "width": 425.71,
+          "x": 41.43,
+          "y": 184.29,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"630277c1a926d5130852\",\"layouts\":[{\"id\":0,\"position\":{\"x\":500,\"y\":496,\"z\":9000,\"width\":570,\"height\":202,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Final Data.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.SL %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Date\"},\"Name\":\"Final Data.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"SL %\"},\"Name\":\"Measure Table.SL %\",\"NativeReferenceName\":\"SL %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend line 1'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"areaMatchStrokeColor\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"areaColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measure Table.SL %\"}}]}}}",
+          "filters": "[]",
+          "height": 202.00,
+          "width": 570.00,
+          "x": 500.00,
+          "y": 496.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"7e7aec5e0ca6295ed80b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":500,\"y\":294,\"z\":8000,\"width\":570,\"height\":202,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Final Data.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.WFH %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Date\"},\"Name\":\"Final Data.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"WFH %\"},\"Name\":\"Measure Table.WFH %\",\"NativeReferenceName\":\"WFH %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend line 1'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"areaMatchStrokeColor\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"areaColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measure Table.WFH %\"}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 202.00,
+          "width": 570.00,
+          "x": 500.00,
+          "y": 294.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"7e8f62f5eb948d12009b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":116.25,\"y\":12.5,\"z\":5000,\"width\":275,\"height\":52.5,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Presence Insights\",\"textStyle\":{\"fontSize\":\"20pt\",\"color\":\"#118dff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 52.50,
+          "width": 275.00,
+          "x": 116.25,
+          "y": 12.50,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"9ae0d983b27940bd7109\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":58.75,\"z\":0,\"width\":173.75,\"height\":125,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.Presence %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Presence %\"},\"Name\":\"Measure Table.Presence %\",\"NativeReferenceName\":\"Presence %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Presence %\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"28D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 125.00,
+          "width": 173.75,
+          "x": 0.00,
+          "y": 58.75,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b037012f72ad44398ac2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":500,\"y\":92,\"z\":7000,\"width\":570,\"height\":202,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Final Data.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Presence %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Date\"},\"Name\":\"Final Data.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Presence %\"},\"Name\":\"Measure Table.Presence %\",\"NativeReferenceName\":\"Presence %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend line 1'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 202.00,
+          "width": 570.00,
+          "x": 500.00,
+          "y": 92.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"d435d4ef20cdc250ccdc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1070,\"y\":293.75,\"z\":10000,\"width\":193.75,\"height\":202.5,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Final Data.Day of Week\"},{\"queryRef\":\"Measure Table.WFH %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Final Data\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Day of Week\"},\"Name\":\"Final Data.Day of Week\",\"NativeReferenceName\":\"Day of Week\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"WFH %\"},\"Name\":\"Measure Table.WFH %\",\"NativeReferenceName\":\"WFH %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Day of Week\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"101.66666666666667D\"}}}},\"selector\":{\"metadata\":\"Final Data.Day of Week\"}}]}}}",
+          "filters": "[]",
+          "height": 202.50,
+          "width": 193.75,
+          "x": 1070.00,
+          "y": 293.75,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"da177d6273715a5eb047\",\"layouts\":[{\"id\":0,\"position\":{\"x\":174.2857142857143,\"y\":58.57142857142858,\"z\":2000,\"width\":160,\"height\":125.71428571428572,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.WFH %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"WFH %\"},\"Name\":\"Measure Table.WFH %\",\"NativeReferenceName\":\"WFH %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"WFH %\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"28D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 125.71,
+          "width": 160.00,
+          "x": 174.29,
+          "y": 58.57,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
